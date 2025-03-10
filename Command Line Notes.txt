@@ -1,0 +1,65 @@
+Full, explict, commands:
+Windows command line and Windows gitBash:
+Make sure that you are **not** using smart quotes
+Compile:
+javac -cp "lucene-queryparser-8.8.2.jar;lucene-core-8.8.2.jar;lucene-analyzers-common-8.8.2.jar;." TextFileIndexer.java
+javac -cp "lucene-queryparser-8.8.2.jar;lucene-core-8.8.2.jar;lucene-analyzers-common-8.8.2.jar;." IndexSearcherExample.java
+
+Run TextFileIndexer once:
+java -cp "lucene-queryparser-8.8.2.jar;lucene-core-8.8.2.jar;lucene-analyzers-common-8.8.2.jar;." TextFileIndexer
+
+Run IndexSearcherExample:
+java -cp "lucene-queryparser-8.8.2.jar;lucene-core-8.8.2.jar;lucene-analyzers-common-8.8.2.jar;." IndexSearcherExample
+ 
+
+Command line Linux (HPC):
+Compile:
+javac -cp lucene-queryparser-8.8.2.jar:lucene-core-8.8.2.jar:lucene-analysis-common-8.8.2.jar:. TextFileIndexer.java
+javac -cp lucene-queryparser-8.8.2.jar:lucene-core-8.8.2.jar:lucene-analysis-common-8.8.2.jar:. IndexSearcherExample.java
+
+Run TextFileIndexer once:
+java -cp lucene-queryparser-8.8.2.jar:lucene-core-8.8.2.jar:lucene-analysis-common-8.8.2.jar:. TextFileIndexer
+
+Run IndexSearcherExample:
+java -cp lucene-queryparser-8.8.2.jar:lucene-core-8.8.2.jar:lucene-analysis-common-8.8.2.jar:. IndexSearcherExample
+
+
+Setting CLASSPATH first
+Windows gitBash:
+Make sure that you are **not** using smart quotes
+export CLASSPATH="./*;."
+Compile:
+javac TextFileIndexer.java
+javac IndexSearcherExample.java
+
+Run TextFileIndexer once:
+java TextFileIndexer
+
+Run IndexSearcherExample:
+java IndexSearcherExample
+ 
+
+Command line Linux (HPC):
+export CLASSPATH=./*:.
+Compile:
+javac TextFileIndexer.java
+javac IndexSearcherExample.java
+
+Run TextFileIndexer once:
+java TextFileIndexer
+
+Run IndexSearcherExample:
+java IndexSearcherExample
+
+
+VSCode's .vscode\settings.json file:
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "lucene-analysis-common-8.8.2.jar",
+        "lucene-core-8.8.2.jar",
+        "lucene-queryparser-8.8.2.jar"
+    ]
+}
