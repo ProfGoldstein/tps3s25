@@ -1,0 +1,10 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "lucene-analysis-common-8.8.2.jar",
+        "lucene-core-8.8.2.jar",
+        "lucene-queryparser-8.8.2.jar"
+    ]
+}
